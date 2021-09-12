@@ -2,7 +2,8 @@ import pyjokes
 import streamlit as st
 
 with st.sidebar:
-    selected_categoty = st.selectbox("Joke Category", ("all", "chuck"))
+    selected_lang = st.selectbox("Select language", ("en", "de", "es", "gl", "eus"))
+    selected_categoty = st.selectbox("Joke Category", ("all", "neutral", "chuck"))
 
 st.title(":joy: Random Joke app")
 
